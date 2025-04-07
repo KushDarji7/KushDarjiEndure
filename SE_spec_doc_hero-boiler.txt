@@ -1,0 +1,144 @@
+1. Introduction
+
+    The animated news ticker is a key component of the user’s web portfolio. It will display scrolling text obtained from an external text file, continuously looping through the content. This document outlines the requirements, design, and implementation details of the component.
+
+2. Requirements
+
+2.1 Functional Requirements
+
+    The news ticker must be fixed at the bottom of the screen and move with the page when scrolling.
+
+    The parent container for the component is news-container.
+
+    The rightmost side of the ticker contains an image inside news-heading.
+
+    The remaining width is occupied by news, which contains text elements news-item.
+
+    The text elements must animate from right to left within news.
+
+    News items are loaded from an external news.txt file.
+
+    Each line of news.txt is parsed and stored in a list.
+
+    Only one news-item is displayed at a time.
+
+    The next news-item begins animating only when the previous one is fully off-screen.
+
+    Once all items have been displayed, the ticker loops back to the first item.
+
+2.2 Non-Functional Requirements
+
+    Smooth animation without jittering.
+
+    Performance-efficient DOM updates.
+
+    Proper styling to ensure readability and responsiveness.
+
+    External file parsing should be asynchronous to prevent UI blocking.
+
+3. System Design
+
+3.1 Component Structure
+
+    news-container (Parent Div)
+        ├── news-heading (Contains Image)
+        │   ├── <img src="...">
+        ├── news (Text Container)
+            ├── news-item (Single News Entry)
+
+3.2 Styling (CSS)
+
+    news-container is positioned fixed at the bottom.
+
+    news-heading contains an image with a height of 32px.
+
+    news ensures overflow: hidden; to mask the exiting text.
+
+    news-item is animated using CSS transitions or JavaScript.
+
+3.3 Animation Logic (JavaScript)
+
+    Fetch and parse news.txt.
+
+    Store each line as a list element.
+
+    Display one news-item at a time.
+
+    Animate text from right to left.
+
+    Trigger the next item only after the previous fully exits.
+
+    Loop back after the last item.
+
+4. Implementation Plan
+
+4.1 Steps
+
+    Define the HTML structure.
+
+    Apply necessary CSS styles.
+
+    Implement JavaScript to:
+
+    Fetch and parse news.txt.
+
+    Store news items.
+
+    Animate the scrolling effect.
+
+    Loop content upon completion.
+
+    Optimize performance.
+
+    Test responsiveness and behavior across devices.
+
+4.2 Possible Enhancements
+
+    Allow fetching news from an API.
+
+    Enable user-defined speed settings.
+
+    Implement a pause-on-hover feature.
+
+5. Conclusion
+
+    This document defines the technical requirements and implementation plan for the animated news ticker. By following the outlined approach, the component will provide a smooth and effective scrolling news feature within the web portfolio.
+
+Software Engineering Document: Animated News Ticker Component
+
+1. Introduction
+    The Animated News Ticker component is a scrolling text feature that will display messages dynamically at the bottom of the screen. It will fetch news items from an external text file (news.txt), parse them, and display each line sequentially in a continuous loop.
+
+2. Requirements
+
+    Positioning: The ticker must be fixed at the bottom of the screen and should remain in place while scrolling.
+
+    Container Structure:
+
+    news-container: Parent div containing the ticker.
+
+    news-heading: Div containing an image (32px height) aligned to the right.
+
+    news: Div occupying the remaining space for scrolling news text.
+
+    news-item: Individual news text elements animated from right to left.
+
+    Animation Behavior:
+
+    Text will flow from right to left within the news div.
+
+    A new news item will appear only after the previous one has completely exited.
+
+    When all news items have been displayed, the list will loop back to the first item.
+
+    Data Source: News items will be read from news.txt, where each line represents a separate news item.
+
+    Responsiveness: Component should work across all screen sizes.
+
+3. Technologies Used
+
+    HTML for structure
+
+    CSS for styling and animation
+
+    JavaScript for dynamic content handling
