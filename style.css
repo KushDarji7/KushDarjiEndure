@@ -269,8 +269,8 @@ section {
 .services-container {
   display: grid;
   /* responsive grid lay out dependendent on screen space reserved for services containers cards if not enough space there is a defualt alignment/sizing of services cards*/
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
 }
 
 .project-card{
@@ -281,7 +281,7 @@ section {
   justify-content: center;
   overflow: hidden;
   object-fit: cover;
-  padding: 3em;
+  padding: 1em;
   gap: 2em;
   color: white;
   cursor: pointer;
