@@ -434,7 +434,9 @@ footer {
   display: flex;
   align-items: center;
   gap: 1em;
-  text-decoration: nzone;
+  text-decoration: none;
+  color: white;
+
 }
 
 .col-box i a{
@@ -452,13 +454,17 @@ footer {
   text-decoration: none;
   font-size: 2em;
   border: 2px solid rgb(105, 180, 105);
-  border-radius: 2%;
+  border-radius: 2px;
 }
 .col-box s:visited{
   color: inherit;
-  background: linear-gradient(to right, #00c6ff, #e2a1b9);
+  text-decoration: none;
+  background: linear-gradient(to right, #00c6ff, #dfaed9); /* match this to your span */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border: 2px solid transparent;
+  transition: border 0.3s ease, color 0.3s ease;
+
 }
 
 .col-box span {
