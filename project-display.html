@@ -1,13 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Disaply</title>
-    <link rel="stylesheet" href="projectDisplay_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="project-display-style.css">
+    <title>Kush's Portfolio </title>
 </head>
+
 <body>
-    
-    
+
+    <!-- navigation bar -->
+    <nav>
+        <a href="https://kushdarji7.github.io/KushDarjiEndure/" class="logo"><span>Kush</span></a>
+        <ul class="links">
+            <!-- <a href="https://kushdarji7.github.io/KushDarjiEndure/">Home</a> -->
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#description">Networking</a>
+        </ul>
+
+        <i class='bx bx-menu' id="menu"></i>
+        <a href="#contact" class="btn">Contact Me</a>
+    </nav>
+    <!-- home section -->
+    <section id="about">
+        <div class="about-box">
+            <div class="about-info">
+                <h1><span>Project: storm.lyy </span></h1>
+
+            </div>
+
+            <h2><span>Skills Used</span></h2>
+            <div class="skills">
+                <ul>
+                    <li>
+                        <span> <i class='bx bx-chevron-right'></i> DART</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> Android Studio</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> Fire Base</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> GIT Version Control</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> Weather API</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> AGILE: Software Development Operations</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- picture of project -->
+
+        <div class="project-container-team">
+
+            <div class="project-card-showcase">
+                <h1>
+                    <a href="https://github.com/KushDarji7/storm.lyy">
+                        <span>
+                            Kush Darji
+                        </span>
+                        </a>
+                </h1>
+                <p>project design, wireframe design,api integration,presentation, weather map, forcast design, backend
+                    forcast retrival, application testing, firebase API integration.</p>
+
+                <a href="https://github.com/KushDarji7/storm.lyy?tab=readme-ov-file">
+                    <img src="./assets/project-mad4360-stormlyy.png" alt="project-img">
+                </a>
+            </div>
+            <div class="project-card-showcase">
+                <h1>
+                    <a href="https://github.com/vkien1/storm.lyy">
+                        <span>
+                            V Kein
+                        </span>
+                        </a>
+                </h1>
+                <p>api integration, presentation, frontend design, login in screen, firebase API integration, data
+                    endpoints configuration, UI design, application testing.</p>
+
+                <a href="https://github.com/vkien1/storm.lyy">
+                    <img src="./assets/project-mad4360-stormlyy.png" alt="project-img">
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- project disaply -->
+
+    <section id="project">
+        <h1 class="header"><span>Project</span></h1>
+
+        <div class="project-container">
+            <di class="project-card">
+
+                <h1><span>Mobile App: Storm.lyy </span></h1>
+
+                <p>Storm.lyy is a mobile weather app that starts by prompting users to log in or create a new account.
+                    Once logged in, the app requests location access to show local weather conditions on the static home
+                    page. Use the bottom left map button to explore interactive weather maps, and filter specific
+                    weather phenomena with the top right widgets. Swipe between screens to view detailed weather info
+                    for different cities using the top search bar. Access extra features like temperature unit toggles,
+                    accessibility options, and logout via the bottom right drawer menu.
+                </p>
+
+
+                <div class="project-card">
+                    <h1>
+                        <a href="https://github.com/vkien1/storm.lyy">
+                            <span>Vist Project Source Code</span>
+
+                        </a>
+                    </h1>
+
+                    <iframe src="https://www.youtube.com/embed/79W6R8x-3gg?si=hMMuUhBi34kjem13"
+                        title="storm.lyy presentation" frameborder="1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- contact form -->
+
+    <section id="contact">
+        <h1 class="header">Contact</h1>
+
+
+        <!-- because the post method of web4forms is using a public key we do not need to hide the access key -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2a16812f-9f02-464d-9142-34b375cde2c1">
+            <div class="input-box">
+                <span>Full Name</span>
+                <input type="text" placeholder="Enter Your Full Name" class="contact-inputs" required>
+            </div>
+            <div class="input-box">
+                <span>Email</span>
+                <input type="text" placeholder="Enter Your Email" class="contact-inputs" required>
+            </div>
+
+            <div class="input-box">
+                <span>Message</span>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            </div>
+
+            <div class="btn"><button type="submit">Submit</button></div>
+        </form>
+    </section>
+
+    <footer id="description">
+        <div class="col-left">
+            <div class="col-box">
+                <span><i class='bx bxs-location-plus'></i></span>
+                <span>Atlanta, GA</span>
+            </div>
+            <div class="col-box">
+                <span><i class='bx bxs-phone'></i></span>
+                <span>+1 404 844 3017</span>
+            </div>
+            <div class="col-box">
+                <span><i class='bx bxs-envelope'></i></span>
+                <span>kush7darji+work@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="col-right">
+            <span>About My Services</span>
+            <p>At the beginning of my professional journey, I am actively seeking short- or long-term software
+                engineering roles that offer opportunities for growth and advancement. I am driven to build scalable,
+                efficient solutions while deepening my expertise in software architecture and development. My goal is to
+                contribute to impactful projects, collaborate with experienced professionals, and eventually grow into a
+                leadership role.</p>
+
+            <div class="social-icons">
+
+                <span>
+                    <a class="links" href="https://www.linkedin.com/in/kush-darji-18bb81130" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                </span>
+
+                <span>
+                    <a class="links" href="https://github.com/KushDarji7" target="_blank" rel="noopener noreferrer">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </span>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <div class="news-container">
+        <div class="news-heading">
+            <img src="./assets/halo-superintendent.gif" alt="V ~: ">
+        </div>
+        <div class="news">
+            <div class="news-item">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
