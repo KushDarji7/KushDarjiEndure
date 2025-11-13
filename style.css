@@ -1,3 +1,5 @@
+/* colors */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +14,19 @@
 }
 
 :root {
+  --text-color: #1b1818;
+  --text-color-second: #fff1f1;
+  --background: #ffdddf;
+  --color-secondary: #ffbdc2;
+  --second-background: #ff9ba2;
+  --text-link: #ff7d86;
+}
+/* :root {
   --text-color: rgb(255, 255, 255);
   --text-link: rgb(251, 239, 147);
   --background: rgb(25, 30, 30);
   --second-background: rgba(15, 25, 30);
-}
+} */
 
 body {
   min-height: 100vh;
@@ -32,7 +42,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(11, 14, 12, 0.906);
+  background-color: var(--second-background);
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
@@ -51,8 +61,8 @@ nav ul a {
 
 nav ul a:hover {
   opacity: 1;
-  color: rgb(75, 138, 75);
-  border: 1px solid rgba(75, 138, 75, 0.5);
+  color: var(--text-color);
+  border: 1px solid rgb(255, 125, 134);
   border-radius: 5px;
 }
 
@@ -66,8 +76,8 @@ nav ul a:hover {
 
 .logo:hover {
   opacity: 1;
-  color: rgb(75, 138, 75);
-  border: 1px solid rgba(75, 138, 75, 0.5);
+  color: rgb(255, 125, 134);
+  border: 1px solid #ff7d86 ;
   border-radius: 5px;
 }
 
@@ -78,13 +88,13 @@ nav ul a:hover {
   letter-spacing: 1px;
   border-radius: 0.5em;
   font-size: 1.1em;
-  border: 2px solid white;
+  border: 2px solid var(--text-link);
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background-color: rgb(125, 160, 117);
+  background-color: var(--text-link);
   color: var(--background);
 }
 
@@ -92,7 +102,7 @@ nav ul a:hover {
   display: flex;
   align-items: center;
   font-size: large;
-  color: rgb(255, 255, 255);
+  color: var(--text-color);
   border: none;
   background: transparent;
   cursor: pointer;
@@ -100,7 +110,7 @@ nav ul a:hover {
 
 /* gradient text effect */
 span {
-  background: linear-gradient(to right, rgb(238, 123, 8), rgb(251, 105, 139));
+  background: var(--text-color);
   background-clip: text;
   color: transparent;
 }
@@ -121,7 +131,7 @@ nav .right img {
 }
 nav .right a:last-child {
   color: var(--text-color);
-  background-color: rgba(0, 0, 0, 0.29);
+  background-color: var(--background);
   padding: 10px 15px;
   border-radius: 5px;
 }
@@ -295,7 +305,7 @@ section {
 }
 
 .project-card:hover {
-  border: 3px solid rgb(75, 179, 59);
+  border: 3px solid rgb(255, 125, 134);
 }
 .project-card p {
   opacity: 0.8;
@@ -342,7 +352,7 @@ form input {
 }
 
 form input:focus {
-  background: rgb(129, 144, 138);
+  background: var(--text-link);
 }
 
 .contact-inputs {
@@ -395,7 +405,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  color: white;
+  color: var(--text-color-second);
   max-width: 500px;
 }
 

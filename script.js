@@ -1,7 +1,12 @@
+
+// Colors 
+// const CoralPastelPinks = [ #fff1f1,#ffdddf,#ffbdc2,#ff9ba2,#ff7d86];
+
 // nav bar for top navigation in mobile to desktop
 
 const menu = document.querySelector("#menu");
 const nav = document.querySelector(".links");
+
 
 menu.onclick = () => {
   menu.classList.toggle("bx-x");
@@ -33,3 +38,6 @@ const startNewsTicker = async () => {
     setInterval(displayNextNews, 20000);
 }
 document.addEventListener('DOMContentLoaded', startNewsTicker);
+
+
+
